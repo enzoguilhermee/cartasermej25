@@ -5,12 +5,10 @@ body {
     #FF9D2B, 
     #FFBD00, 
     #F5C423,
-    #F5C423,
-    #F5C423,
-    #F5C423,
     #FFBD00,
     #FF9D2B,
-    #FF842B
+    #FF842B,
+    #FF772B
     );
     height: 100vh;
     display: flex;
@@ -20,9 +18,11 @@ body {
 }
 
 .sermej img {
-  max-width: 600px; /* ou o tamanho que preferir */
-  height: auto;
+  max-width: 800px; /* ou o tamanho que preferir */
+  margin-bottom: 200px;
+  margin-top: 10vh;
 }
+
 
 .envelope {
   width: 500px;
@@ -94,3 +94,6 @@ body {
   gap: 20px;               /* espaço entre a imagem e a carta */
   margin-top: -10vh;
 }
+
+
+/* tirar margin top do sermej img no media screen */
