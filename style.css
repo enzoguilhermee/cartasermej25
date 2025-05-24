@@ -1,0 +1,96 @@
+body {
+    background: linear-gradient(to bottom, 
+    #FF772B, 
+    #FF842B, 
+    #FF9D2B, 
+    #FFBD00, 
+    #F5C423,
+    #F5C423,
+    #F5C423,
+    #F5C423,
+    #FFBD00,
+    #FF9D2B,
+    #FF842B
+    );
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sermej img {
+  max-width: 600px; /* ou o tamanho que preferir */
+  height: auto;
+}
+
+.envelope {
+  width: 500px;
+  height: 300px;
+  position: relative;
+  background: #f1ecd2;
+  border-radius: 10px;
+  cursor: pointer;
+  perspective: 1000px;
+  transition: transform 0.5s;
+  box-shadow: #333;
+  text-shadow: #FF772B;
+  margin-top: -200px;
+}
+
+.flap {
+  width: 100%;
+  height: 50%;
+  background: #e7e0bc;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px 10px 0 0;
+  transform-origin: top;
+  transition: transform 0.6s ease;
+  z-index: 2;
+  display: flex;               /* ativa flexbox */
+  justify-content: center;     /* centraliza na horizontal */
+  align-items: center;         /* centraliza na vertical */
+  text-align: center;
+}
+
+.paper {
+  background: #fffbe6;
+  width: 90%;
+  height: 400px;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  z-index: 1;
+}
+
+.envelope.open .flap {
+  transform: rotateX(-120deg);
+  color: #e7e0bc;
+}
+
+.envelope.open .paper {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mensagem {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* coloca os filhos em coluna */
+  align-items: center;     /* centraliza no eixo horizontal */
+  gap: 20px;               /* espaço entre a imagem e a carta */
+  margin-top: -10vh;
+}
