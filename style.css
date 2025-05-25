@@ -18,9 +18,9 @@ body {
 }
 
 .sermej img {
-  max-width: 800px; /* ou o tamanho que preferir */
+  max-width: 600px; /* ou o tamanho que preferir */
   margin-bottom: 200px;
-  margin-top: 10vh;
+  margin-top: 20%;
 }
 
 
@@ -68,6 +68,10 @@ body {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.6s ease, transform 0.6s ease;
+  cursor: auto;
+}
+
+.envelope.open{
   z-index: 1;
 }
 
@@ -78,6 +82,7 @@ body {
 
 .envelope.open .paper {
   opacity: 1;
+  z-index: 1;
   transform: translateY(0);
 }
 
@@ -96,4 +101,60 @@ body {
 }
 
 
-/* tirar margin top do sermej img no media screen */
+/* From Uiverse.io by Sergestra */ 
+button {
+ outline: 0;
+ border: 0;
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ max-width: 400px;
+ height: 50px;
+ border-radius: 0.5em;
+ box-shadow: 0 0.625em 1em 0 #F5C423;
+ overflow: hidden;
+}
+
+button div {
+ transform: translateY(-10px);
+ width: 100%;
+}
+
+button,
+button div {
+ transition: 0.6s cubic-bezier(.16,1,.3,1);
+}
+
+button div span {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ height: 50px;
+ padding: 0.75em 1.125em;
+}
+
+button div:nth-child(1) {
+ background-color: #F5C423;
+}
+
+button div:nth-child(2) {
+ background-color: #FF842B;
+}
+
+button:hover {
+ box-shadow: 0 0.625em 1em 0 #FF842B;
+}
+
+button:hover div {
+ transform: translateY(-80px);
+}
+
+button p {
+ font-size: 17px;
+ font-weight: bold;
+ color: #ffffff;
+}
+
+button:active {
+ transform: scale(0.95);
+}
