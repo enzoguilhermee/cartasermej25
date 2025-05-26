@@ -74,7 +74,7 @@ particlesJS('particles-js', {
   const textElement = document.getElementById("typingText");
   const phrases = [
     "QUAL VOZ VOCÊ QUER ECOAR?",
-    "O MAIOR SERMEJ ESTÁ POR VIR"
+    "O MAIOR SERMEJ ESTÁ POR VIR!"
   ];
   let index = 0;
 
@@ -87,5 +87,5 @@ setInterval(() => {
     index = (index + 1) % phrases.length;
     textElement.textContent = phrases[index];
     textElement.classList.add("typing");
-  }, 200); // espera a animação apagar completamente antes de trocar
+  }, 100); // espera a animação apagar completamente antes de trocar
 }, 5000); // mesmo tempo da animação CSS
