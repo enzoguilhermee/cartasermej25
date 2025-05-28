@@ -63,7 +63,7 @@ particlesJS('particles-js', {
     },
     modes: {
       grab: { distance: 140, line_linked:{opacity: 1} },
-      repulse: { distance: 100},
+      repulse: { distance: 200, duration: 0.6},
       push: { particles_nb: 4 }
     }
   },
