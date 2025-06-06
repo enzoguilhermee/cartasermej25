@@ -54,6 +54,10 @@ body {
   align-items: center;         /* centraliza na vertical */
   text-align: center;
   font-weight: 600;
+  background-image: url(assets/flap\ image.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .paper {
