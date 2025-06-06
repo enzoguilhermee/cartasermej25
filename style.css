@@ -88,6 +88,10 @@ body {
   z-index: 1;
   transform: translateY(0);
   pointer-events: auto;
+  background-image: url(assets/SERMEJ\ CARTA.png);
+  background-size: 100% 438px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .mensagem {
